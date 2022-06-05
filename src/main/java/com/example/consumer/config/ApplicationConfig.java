@@ -6,7 +6,7 @@ import org.springframework.context.annotation.*;
  * Класс ApplicationConfig
  */
 @Configuration
-@Import({ConsumerConfig.class, WebConfig.class})
+@Import({ConsumerConfig.class, WebConfig.class, SwaggerConfig.class, SecurityConfig.class})
 @PropertySource({
 	"classpath:kafka.properties"
 })
